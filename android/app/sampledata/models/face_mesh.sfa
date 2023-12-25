@@ -1,0 +1,76 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/face_mesh.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'chin',
+      parameters: [
+        {
+          texture: 'image',
+        },
+      ],
+      source: 'sampledata/models/fox_face_material.mat',
+    },
+    {
+      name: 'cheeks',
+      parameters: [
+        {
+          texture: 'image',
+        },
+      ],
+      source: 'sampledata/models/fox_face_material.mat',
+    },
+    {
+      name: 'nose',
+      parameters: [
+        {
+          texture: 'nose_fur',
+        },
+      ],
+      source: 'sampledata/models/fox_face_material.mat',
+    },
+    {
+      name: 'earMAT',
+      parameters: [
+        {
+          texture: 'ear_fur',
+        },
+      ],
+      source: 'sampledata/models/fox_face_material.mat',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/face_mesh.fbx',
+    name: 'face_mesh',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/ear_fur.png',
+      name: 'ear_fur',
+      pipeline_name: 'Users/dindin/sample assets/ear_fur.png',
+    },
+    {
+      file: 'sampledata/models/nose_fur.png',
+      name: 'nose_fur',
+      pipeline_name: 'Users/dindin/fox/nose_fur.png',
+    },
+    {
+      file: 'sampledata/models/image.png',
+      name: 'image',
+      pipeline_name: 'flutter/bin/cache/dart-sdk/bin/resources/devtools/assets/icons/inspector/widget_icons/image.png',
+    },
+  ],
+  version: '0.54:2',
+}

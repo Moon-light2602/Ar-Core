@@ -1,0 +1,39 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/test612.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'chin',
+      parameters: [
+        {
+          texture: 'ear_fur',
+        },
+      ],
+      source: 'sampledata/models/fox_face_material.mat',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/test612.fbx',
+    name: 'test612',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/ear_fur.png',
+      name: 'ear_fur',
+      pipeline_name: 'Users/dindin/sample assets/ear_fur.png',
+    },
+  ],
+  version: '0.54:2',
+}

@@ -1,0 +1,49 @@
+{
+  animations: [
+    {
+      path: 'sampledata/models/test1.fbx',
+    },
+  ],
+  materials: [
+    {
+      name: 'nose',
+      parameters: [
+        {
+          texture: 'nose_fur',
+        },
+      ],
+      source: 'sampledata/models/fox_face_material.mat',
+    },
+    {
+      name: 'earMAT',
+      parameters: [
+        {
+          texture: 'ear_fur',
+        },
+      ],
+      source: 'sampledata/models/fox_face_material.mat',
+    },
+  ],
+  model: {
+    attributes: [
+      'Position',
+      'TexCoord',
+      'Orientation',
+      'BoneIndices',
+      'BoneWeights',
+    ],
+    collision: {},
+    file: 'sampledata/models/test1.fbx',
+    name: 'test1',
+    recenter: 'root',
+  },
+  samplers: [
+    {
+      file: 'sampledata/models/ear_fur.png',
+      name: 'ear_fur',
+      pipeline_name: 'Users/dindin/sample assets/ear_fur.png',
+    },
+
+  ],
+  version: '0.54:2',
+}
